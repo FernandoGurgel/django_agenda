@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+
+  <h1> Remover </h1>
+  <form action="." method="post">
+    {% csrf_token %}
+    <h2>{{ item.titulo }}</h2>
+    <!-- <br> -->
+    <p> {{ item.data|date:'d/m/Y' }} - {{ item.hora }}</p>
+    <p> {{item.descricao}}
+    <br>
+    <br>
+    <div class="right">
+      <button class="btn waves-effect red darken-1" type="submit" name="action">Remover
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+    <div class="left">
+      <a href="/" class="waves-effect  btn" >
+        Cancelar</a>
+    </div>
+  </form
+
+{% endblock %}
