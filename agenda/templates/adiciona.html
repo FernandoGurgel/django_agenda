@@ -5,6 +5,10 @@
 <form action="" method="post">
   {% csrf_token %}
   {{ form.as_p }}
+  <div class="left">
+    <a href="/" class="waves-effect  btn" >
+      <i class="material-icons left">cancel</i>Cancelar</a>
+  </div>
   <div class="right">
     <button class="btn waves-effect green darken-1" type="submit" name="action">Salvar
       <i class="material-icons right">send</i>

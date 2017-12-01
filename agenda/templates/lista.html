@@ -6,7 +6,7 @@
     <div class="row ">
       <div class="right">
         <a href="/adiciona/" class="waves-effect light-green darken-4 btn" >
-          <i class="material-icons left">add</i> Adicionar novo item</a>
+          <i class="material-icons left">add</i> Adicionar Evento</a>
       </div>
         </div
         <div class="row">
@@ -35,8 +35,8 @@
                     {{ item.hora }}
                   </td>
                   <td>
-                    <a href="/item/{{ item.id }}" class="waves-effect orange darken-1 btn"><i class="material-icons left">mode_edit</i>Atualiza</a>
-                    <a href="/remover/{{ item.id }}" class="waves-effect red darken-1 btn"><i class="material-icons left">delete_forever</i>Excluir</a>
+                    <a href="/item/{{ item.id }}" class="waves-effect orange darken-1 btn"><i class="material-icons left">mode_edit</i>Editar</a>
+                    <a href="/remover/{{ item.id }}" class="waves-effect red darken-4 btn"><i class="material-icons left">delete_forever</i>Excluir</a>
                   </td>
                 </tr>
                 {% empty %}
@@ -47,7 +47,7 @@
               </tbody>
             </thead>
           </table>
-          {% endblock %}
         </div>
   </div>
 </div>
+{% endblock %}
